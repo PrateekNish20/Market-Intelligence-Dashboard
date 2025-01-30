@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #2c3e50;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.navbar-brand img {
+  height: 50px;
+}
+
+/* Logout Button */
+.navbar .btn-danger {
+  background-color: #e74c3c;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar .btn-danger:hover {
+  background-color: #c0392b;
+}
+
+/* 🔍 Search Bar Styling */
+/* Centered Search Bar Below Title */
+/* Center Search Bar Properly */
+.search-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 15px;
+}
+
+#searchInput {
+  width: 50%;
+  max-width: 500px; /* Ensures it doesn't get too wide */
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 3px 7px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #searchInput {
+    width: 80%;
+  }
+}
+
+
+/* Dashboard Title */
+h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+/* Reports Section */
+#reports {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Report Cards */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+  background: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Card Titles */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Like Button */
+.like-btn {
+  background-color: #28a745;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 8px 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.like-btn:hover {
+  background-color: #218838;
+}
+
+/* Read More Button */
+.btn-info {
+  background-color: #3498db;
+  border: none;
+  padding: 8px 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.btn-info:hover {
+  background-color: #2980b9;
+}
+
+/* Comment Input */
+.comment-input {
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+/* Quick Links */
+h4 {
+  margin-top: 30px;
+  color: #34495e;
+}
+
+.d-flex a {
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.d-flex a.btn-primary {
+  background-color: #007bff;
+}
+
+.d-flex a.btn-success {
+  background-color: #28a745;
+}

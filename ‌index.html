@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Research Dashboard</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Login Page -->
+  <div id="loginPage" class="container text-center mt-5">
+    <h2>Login to Access Reports</h2>
+    <input type="email" id="emailInput" class="form-control mt-3" placeholder="Enter your email" required>
+    <button onclick="checkAccess()" class="btn btn-primary mt-3">Login</button>
+    <p id="error-message" class="text-danger mt-2" style="display: none;">Email not authorized.</p>
+  </div>
+
+  <!-- Dashboard (Visible after Login) -->
+<div id="dashboard" class="container mt-4" style="display: none;">
+  <nav class="navbar navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="Logo.png" alt="Company Logo">
+    </a>
+    <button onclick="logout()" class="btn btn-danger">Logout</button>
+  </nav>
+
+  <!-- Dashboard Title First -->
+  <h3 class="text-center mt-3">Market Intelligence Dashboard</h3>
+
+  <!-- Move Search Bar Below the Title -->
+  <div class="text-center mt-3">
+    <input type="text" id="searchInput" class="form-control" placeholder="Search reports..." onkeyup="searchReports()">
+  </div>
+
+  <!-- Reports Section -->
+  <div id="reports" class="row"></div>
+</div>
+
+
+    <!-- Quick Links -->
+    <h4 class="mt-5">Quick Links</h4>
+    <div class="d-flex justify-content-around">
+      <a href="https://example.com/market-data" target="_blank" class="btn btn-primary">Market Data</a>
+      <a href="https://example.com/sales-data" target="_blank" class="btn btn-success">Siemens Data</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
